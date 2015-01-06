@@ -7,7 +7,7 @@
       {{#if isVisible}}
         <a href="#" class="toggle-product-isVisible-link" data-i18n="productDetail.makeInvisible">Make invisible</a> |
       {{/if}}
-      <a href="#" class="delete-product-link" data-i18n="app.Delete">Delete</a>
+      <a href="#" class="delete-product-link" data-i18n="app.delete">Delete</a>
     </div>
     {{#unless isVisible}}
     <div class="row">
@@ -52,8 +52,7 @@
             </span>
             {{>fieldComponent field="vendor" value=vendor}}
           </div>
-          <div class="col-xs-3 col-xs-offset-1">
-            {{!-- Social Commentary --}}
+          <!-- <div class="col-xs-3 col-xs-offset-1">
             {{#if userHasRole "admin"}}
             <div class="social-media">
               <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
@@ -70,7 +69,7 @@
             {{else}}
               {{>productSocial}}
             {{/if}}
-          </div>
+          </div> -->
         </div>
         <!-- main product information -->
         <div class="row col-md-11">
@@ -86,7 +85,7 @@
           </div>
 
           {{!-- Cart Add Block --}}
-          <div class="row">
+          <!-- <div class="row">
             <span id="product-alerts">{{>bootstrapAlerts placement="productDetail"}}</span>
             <div class="btn btn-primary add-to-cart-block" id="add-to-cart">
               <div class="add-to-cart-quantity pull-left">
@@ -94,7 +93,7 @@
               </div>
               <div class="add-to-cart-text" data-i18n="productDetail.addToCart">Add to cart</div>
             </div>
-          </div>
+          </div> -->
 
         </div>
         <!-- END Right Side -->
