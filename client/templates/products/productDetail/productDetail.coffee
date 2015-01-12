@@ -134,7 +134,7 @@ Template.productDetail.events
         errorMsg += "Variant " + (index + 1) + " price is required. "
 
     if errorMsg.length
-      Alerts.add errorMsg, "danger", placement:"productDetail"
+      Alerts.add errorMsg, "danger", placement:"productVisibility"
     else
       Products.update(template.data._id, {$set: {isVisible: !template.data.isVisible}})
     return
