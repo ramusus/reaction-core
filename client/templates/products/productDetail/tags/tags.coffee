@@ -21,7 +21,6 @@ Template.productTagInputForm.events
   'click .tags-input-select': (event,template) ->
     $(event.currentTarget).autocomplete(
       delay: 0
-      autoFocus: true
       source: (request, response) ->
         datums = []
         slug = getSlug request.term
